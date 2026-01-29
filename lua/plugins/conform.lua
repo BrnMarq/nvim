@@ -7,6 +7,7 @@ return {
         formatters_by_ft = {
           python = { "ruff_format" }, -- Tries ruff_format first, then black as a fallback
           lua = { "stylua" },
+          go = { "gofmt" },
         },
       })
       vim.api.nvim_create_autocmd("BufWritePre", {

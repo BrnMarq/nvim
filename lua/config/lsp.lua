@@ -46,18 +46,23 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
     opts.desc = "Restart LSP"
     keymap.set("n", "<leader>rs", ":LspRestart<CR>")
-  end
+  end,
 })
 
 local severity = vim.diagnostic.severity
 
 vim.diagnostic.config({
+  virtual_text = {
+    enabled = true,
+    prefix = "",
+  },
+  severity_sort = true,
   signs = {
     text = {
       [severity.ERROR] = " ",
       [severity.WARN] = " ",
       [severity.INFO] = " ",
-      [severity.HINT] = " "
-    }
-  }
+      [severity.HINT] = " ",
+    },
+  },
 })

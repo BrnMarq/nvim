@@ -23,9 +23,13 @@ return {
       vim.lsp.config("pyright", {
         capabilities = capabilities,
       })
+      vim.lsp.config("gopls", {
+        capabilities = capabilities,
+      })
 
       vim.lsp.enable({ "lua_ls" })
       vim.lsp.enable({ "pyright" })
+      vim.lsp.enable({ "gopls" })
     end,
   },
 }
