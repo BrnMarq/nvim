@@ -8,6 +8,16 @@ return {
           python = { "ruff_format" }, -- Tries ruff_format first, then black as a fallback
           lua = { "stylua" },
           go = { "gofmt" },
+          javascript = { "prettier" },
+          typescript = { "prettier" },
+          javascriptreact = { "prettier" },
+          typescriptreact = { "prettier" },
+          css = { "prettier" },
+          html = { "prettier" },
+          json = { "prettier" },
+          yaml = { "prettier" },
+          markdown = { "prettier" },
+          graphql = { "prettier" },
         },
       })
       vim.api.nvim_create_autocmd("BufWritePre", {

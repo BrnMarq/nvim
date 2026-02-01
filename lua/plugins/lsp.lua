@@ -26,10 +26,14 @@ return {
       vim.lsp.config("gopls", {
         capabilities = capabilities,
       })
+      vim.lsp.config("ts_ls", {
+        capabilities = capabilities,
+      })
 
       vim.lsp.enable({ "lua_ls" })
       vim.lsp.enable({ "pyright" })
       vim.lsp.enable({ "gopls" })
+      vim.lsp.enable({ "ts_ls" })
     end,
   },
 }
