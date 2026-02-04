@@ -1,27 +1,27 @@
 return {
   { -- This helps with ssh tunneling and copying to clipboard
-    'ojroques/vim-oscyank',
+    "ojroques/vim-oscyank",
   },
   { -- This generates docblocks
-    'kkoomen/vim-doge',
-    build = ':call doge#install()'
+    "kkoomen/vim-doge",
+    build = ":call doge#install()",
   },
   { -- Git plugin
-    'tpope/vim-fugitive',
+    "tpope/vim-fugitive",
   },
   { -- Show historical versions of the file locally
-    'mbbill/undotree',
+    "mbbill/undotree",
   },
   { -- Show CSS Colors
-    'brenoprata10/nvim-highlight-colors',
+    "brenoprata10/nvim-highlight-colors",
     config = function()
-      require('nvim-highlight-colors').setup({})
-    end
+      require("nvim-highlight-colors").setup({})
+    end,
   },
   {
-    'windwp/nvim-autopairs',
+    "windwp/nvim-autopairs",
     event = "InsertEnter",
-    config = true
+    config = true,
     -- use opts = {} for passing setup options
     -- this is equivalent to setup({}) function
   },
@@ -36,6 +36,6 @@ return {
       require("nvim-surround").setup({
         -- Configuration here, or leave empty to use defaults
       })
-    end
-  }
+    end,
+  },
 }
