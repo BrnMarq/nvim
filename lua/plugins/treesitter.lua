@@ -8,7 +8,7 @@ return {
         indent = { enable = true },
         autotage = { enable = true },
       })
-      require("nvim-treesitter").install({ "lua", "javascript", "tsx", "typescript", "python", "cpp", "go" })
+      require("nvim-treesitter").install({ "lua", "javascript", "tsx", "typescript", "python", "cpp", "go", "rust" })
     end,
   },
   {

@@ -29,11 +29,15 @@ return {
       vim.lsp.config("ts_ls", {
         capabilities = capabilities,
       })
+      vim.lsp.config("rust_analyzer", {
+        capabilities = capabilities,
+      })
 
       vim.lsp.enable({ "lua_ls" })
       vim.lsp.enable({ "pyright" })
       vim.lsp.enable({ "gopls" })
       vim.lsp.enable({ "ts_ls" })
+      vim.lsp.enable({ "rust_analyzer" })
     end,
   },
 }

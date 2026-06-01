@@ -8,6 +8,7 @@ return {
           python = { "ruff_format" }, -- Tries ruff_format first, then black as a fallback
           lua = { "stylua" },
           go = { "gofmt" },
+          rust = { "rustfmt" },
           javascript = { "prettier" },
           typescript = { "prettier" },
           javascriptreact = { "prettier" },
