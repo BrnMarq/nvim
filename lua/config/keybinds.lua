@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 -- Normal mode keybinds
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
-vim.keymap.set("n", "<leader>cd", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>cd", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
 vim.keymap.set("n", "<leader>p", '"+p')
 vim.keymap.set("n", "<leader>o", "mzo<esc>`z")
 vim.keymap.set("n", "<leader>O", "mzO<esc>`z")
