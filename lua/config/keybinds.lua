@@ -9,6 +9,13 @@ vim.keymap.set("n", "<leader>O", "mzO<esc>`z")
 vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeFocus<CR>")
 vim.keymap.set("n", "<C-j>", "<cmd>cnext<CR>")
 vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>")
+vim.keymap.set("n", "<leader>st", function()
+  vim.cmd.vnew()
+  vim.cmd.term()
+  vim.cmd.wincmd("J")
+  vim.api.nvim_win_set_height(0, 5)
+end)
+vim.keymap.set("n", "<C-d>", "<cmd>:q<CR>")
 
 -- Insert mode keybinds
 vim.keymap.set("i", "jj", "<Esc>")
