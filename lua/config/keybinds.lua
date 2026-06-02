@@ -6,6 +6,7 @@ vim.keymap.set("n", "<leader>cd", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle Nv
 vim.keymap.set("n", "<leader>p", '"+p')
 vim.keymap.set("n", "<leader>o", "mzo<esc>`z")
 vim.keymap.set("n", "<leader>O", "mzO<esc>`z")
+vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeFocus<CR>")
 vim.keymap.set("n", "<C-j>", "<cmd>cnext<CR>")
 vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>")
 
